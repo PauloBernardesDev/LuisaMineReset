@@ -1,0 +1,7 @@
+broadcast:
+  enabled: true
+  warning-before: 60
+
+messages:
+  warning: "&eThe mine &f%mine% &ewill reset in &f%time%&e."
+  reset: "&aThe mine &f%mine% &ahas been reset!"

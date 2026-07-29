@@ -1,0 +1,78 @@
+name: LuisaMineReset
+version: '1.0.0'
+main: dev.paulobernardes.luisaminereset.LuisaMineReset
+api-version: '1.21'
+author: Paulo Bernardes
+description: A modern and customizable mine reset plugin for Paper servers.
+
+softdepend:
+  - WorldEdit
+
+commands:
+  luisaminereset:
+    description: Main command for LuisaMineReset.
+    usage: /luisaminereset help
+    aliases:
+      - lmr
+      - mine
+
+permissions:
+  luisaminereset.admin:
+    description: Gives access to all LuisaMineReset commands.
+    default: false
+    children:
+      luisaminereset.create: true
+      luisaminereset.delete: true
+      luisaminereset.rename: true
+      luisaminereset.list: true
+      luisaminereset.setregion: true
+      luisaminereset.setblock: true
+      luisaminereset.settime: true
+      luisaminereset.setspawn: true
+      luisaminereset.reset: true
+      luisaminereset.info: true
+      luisaminereset.reload: true
+
+  luisaminereset.create:
+    description: Allows creating mines.
+    default: false
+
+  luisaminereset.delete:
+    description: Allows deleting mines.
+    default: false
+
+  luisaminereset.rename:
+    description: Allows renaming mines.
+    default: false
+
+  luisaminereset.list:
+    description: Allows listing mines.
+    default: false
+
+  luisaminereset.setregion:
+    description: Allows setting mine regions.
+    default: false
+
+  luisaminereset.setblock:
+    description: Allows configuring mine blocks.
+    default: false
+
+  luisaminereset.settime:
+    description: Allows setting automatic reset times.
+    default: false
+
+  luisaminereset.setspawn:
+    description: Allows setting mine spawn locations.
+    default: false
+
+  luisaminereset.reset:
+    description: Allows manually resetting mines.
+    default: false
+
+  luisaminereset.info:
+    description: Allows viewing mine information.
+    default: false
+
+  luisaminereset.reload:
+    description: Allows reloading the plugin configuration.
+    default: false

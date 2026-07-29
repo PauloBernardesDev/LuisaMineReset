@@ -1,0 +1,119 @@
+prefix: "&8[&bLMR&8] "
+
+reset-warning: "&eThe mine &f%mine% &ewill reset in &f%time%&e."
+
+reset-complete: "&aThe mine &f%mine% &ahas been reset!"
+
+no-permission: "&cYou don't have permission to use this command."
+
+player-only: "&cOnly players can use this command."
+
+mine-created: "&aMine &e%mine% &acreated successfully."
+
+mine-deleted: "&cMine &e%mine% &cdeleted."
+
+mine-reset: "&aMine &e%mine% &ahas been reset."
+
+mine-not-found: "&cMine not found."
+
+reload-success: "&aConfiguration reloaded."
+
+region-set: "&aRegion set successfully."
+
+spawn-set: "&aSpawn set successfully."
+
+time-set: "&aReset time updated."
+
+block-set: "&aBlock distribution updated."
+
+mine-exists: "&cA mine with this name already exists."
+
+invalid-material: "&cInvalid material."
+
+invalid-number: "&cInvalid number."
+
+usage: "&eUse: %usage%"
+
+help-header: |
+  &b&lLuisaMineReset &8- &7Command Help
+
+help-command-format: "&f%usage%"
+help-command-description: "&7%description%"
+
+commands:
+  help:
+    description: "Displays the available commands."
+
+  create:
+    description: "Creates a new mine."
+
+  delete:
+    description: "Deletes an existing mine."
+
+  list:
+    description: "Displays all registered mines."
+
+  setregion:
+    description: "Defines the mine region using your WorldEdit selection."
+
+  setblock:
+    description: "Defines the blocks and percentages used in the mine."
+
+  settime:
+    description: "Defines the automatic reset time for the mine."
+
+  setspawn:
+    description: "Defines the safe spawn location for the mine."
+
+  reset:
+    description: "Manually resets a mine."
+
+  info:
+    description: "Displays information about a mine."
+
+  reload:
+    description: "Reloads the plugin configuration and messages."
+
+  rename-usage: "&cUsage: &f/lmr rename <current-name> <new-name>"
+  invalid-mine-name: "&cThe mine name may only contain letters, numbers, underscores and hyphens."
+  mine-renamed: "&aMine &f%old-name% &ahas been renamed to &f%new-name%&a."
+  rename-failed: "&cThe mine &f%mine% &ccould not be renamed."
+
+  help-description-rename: "&7Renames an existing mine."
+
+  time-day: "day"
+  time-days: "days"
+
+  time-hour: "hour"
+  time-hours: "hours"
+
+  time-minute: "minute"
+  time-minutes: "minutes"
+
+  time-second: "second"
+  time-seconds: "seconds"
+
+  setblock-usage: "&cUsage: &f%usage%"
+
+  setblock-missing-percentage: "&cEvery block must have a percentage."
+
+  setblock-example: "&7Example: &f/lmr setblock principal lapis_ore 99.5 diamond_ore 0.5"
+
+  setblock-invalid-block: "&cInvalid block: &f%block%"
+
+  setblock-duplicate-block: "&cThe block &f%block% &cwas entered more than once."
+
+  setblock-invalid-percentage: "&cInvalid percentage: &f%percentage%"
+
+  setblock-percentage-range: "&cThe percentage must be greater than 0 and at most 100."
+
+  setblock-total-invalid: "&cThe percentages must total exactly 100%. &7Current total: &f%total%%"
+
+  setblock-saved: "&aBlock composition saved for mine &f%mine%&a."
+
+  setblock-composition-line: "&7- &f%block%&7: &f%percentage%%"
+
+  settime-usage: "&cUsage: &f/lmr settime <mine> <time>"
+  settime-example: "&7Examples: &f30s, 5m, 1h, 1d"
+  settime-invalid-time: "&cInvalid time."
+  settime-success: "&aAutomatic reset time for mine &f%mine% &ahas been set to &f%time%&a."
